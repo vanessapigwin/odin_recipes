@@ -59,17 +59,19 @@ ul {
 }
 
 .title-container {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .title-container img {
-    display: inline;
+    display: block;
+    text-align: center;
     width: 300px;
-    height:auto;
+    height: auto;
 }
 
 .title-container a {
-    padding: 20px;
+    display: block;
+    text-align: center;
 }
 
 .footer {
