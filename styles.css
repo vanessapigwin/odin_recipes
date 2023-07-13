@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     background-color: #FFFFFB;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -33,15 +34,22 @@ img {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    height:auto;    
+    max-width: 80%; /*limit images to max 80% of image height or width*/
+    max-height: 340px;
+}
+
+li {
+    padding: 10px;
+}
+
+ol li{
+    line-height: 25px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 ol {
-    line-height: 25px;
-    font-size: 20px;
-}
-
-ol li {
     padding:8px;
 }
 
@@ -53,28 +61,29 @@ p {
 
 ul {
     line-height: 40px;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     list-style: none;
-}
-
-.title-container {
-    padding: 20px 20px 0px 20px;
-}
-
-.title-container img {
-    display: block;
-    text-align: center;
-    width: 300px;
-    height: auto;
-}
-
-.title-container a {
-    display: block;
-    text-align: center;
 }
 
 .footer {
     text-align: center;
     padding-bottom: 20px;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.title-container > img {
+    flex: 0 1;
+    width: 340px;
+}
+
+.title-container > a {
+    flex: 1 1 300px;
+    align-self: center;
+    text-align: center;
 }
